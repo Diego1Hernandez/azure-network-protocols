@@ -32,7 +32,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/QHRSVO5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create a Windows 10 Virtual Machine(VM) named "VM1".  Next, create a Linux (Ubuntu) VM named "VM2", select the previously created Resource Group and Vnet when creating this new VM.
+Create a Windows 10 Virtual Machine(VM) named "VM1".  Next, create a Linux (Ubuntu) VM named "VM2", select the previously created Resource Group and Vnet when creating this new VM. Note: if you have never created a virtual machine on Azure, check out my tutorial here: 
 
 </p>
 <br />
@@ -44,7 +44,7 @@ Create a Windows 10 Virtual Machine(VM) named "VM1".  Next, create a Linux (Ubun
 <img src="https://i.imgur.com/BTvFxCw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Connect to your VM1 using Remote Desktop Connection. On VM1 dowload and install wireshark from "https://www.wireshark.org/download.html". 
+In the windows search, search remote desktop connection and open. Next, connect to VM1 by typing VM1's address into remote desktop connection. log in using the information you created when creating the virtual machine. On VM1 download and install wireshark from "https://www.wireshark.org/download.html". 
 </p>
 <br />
 

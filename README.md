@@ -30,47 +30,54 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-<h2>Step 1 Create Our Resources</h2>
+<h2>Creating Our Resources</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QHRSVO5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create a Windows 10 Virtual Machine (VM). While creating the VM. Next, create a Linux (Ubuntu) VM, select the previously created Resource Group and Vnet when creating this new VM.
+Create a Windows 10 Virtual Machine(VM) named "VM1".  Next, create a Linux (Ubuntu) VM named "VM2", select the previously created Resource Group and Vnet when creating this new VM.
 
-</p>
-<br />
-
-<h2>Step 2 Observe Different Types of Traffic</h2>
-
-<p>
-Connect to your VM1 using Remote Desktop Connection. 
 </p>
 <br />
 
-<h2>Step 2a Observe SSH Traffic</h2>
+<h2>Download Wireshark onto VM 1</h2>
 
+<p>
+<img src="https://i.imgur.com/CLz2qo0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/BTvFxCw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Connect to your VM1 using Remote Desktop Connection. On VM1 dowload and install wireshark from "https://www.wireshark.org/download.html". 
+</p>
+<br />
+
+<h2>Observing SSH Traffic</h2>
+
+<p>
+<img src="https://i.imgur.com/QHRSVO5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
 <p>
-<h2>Step 2b Observe DHCP Traffic</h2>
+<h2>Observing DHCP Traffic</h2>
 
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
-<h2>Step 2c Observe DNS Traffic</h2>
+<h2>Observing DNS Traffic</h2>
 
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
-<h2>Step 2d Observe RDP Traffic</h2>
+<h2>Observing RDP Traffic</h2>
 
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

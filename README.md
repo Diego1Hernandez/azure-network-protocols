@@ -71,7 +71,7 @@ Open Wireshark and type "ICMP" into the search bar and press enter. Next, open c
 <img src="https://i.imgur.com/HIiSY6L.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In the command line enter "ssh labuser@ <Vm2 PrivateIP>". Log in as the user you created for VM2 when initally creating VM2. Next, on Wireshark type ssh into the search bar and press enter. Enter linux command like "pwd" "nslookup" in order to produce traffic, observe in Wireshark. Disconnect using command CTRL + D.
+In the command line enter "ssh labuser@ "Vm2 PrivateIP". Log in as the user you created for VM2 when initally creating VM2. Next, on Wireshark type ssh into the search bar and press enter. Enter linux command like "pwd" "nslookup" in order to produce traffic, observe in Wireshark. Disconnect using command CTRL + D.
 </p>
 <br />
 
@@ -82,7 +82,7 @@ In the command line enter "ssh labuser@ <Vm2 PrivateIP>". Log in as the user you
 <img src="https://i.imgur.com/AiIuFZG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Wireshark type "DHCP" into the search bar and press enter. DHCP is used to automatically assign a computer a new IP address. In the command line of VM1 type " ipconfig /renew" to assign VM1 a new Ip address and produce activity of Wireshark. Observe this activity on Wireshark.
 </p>
 <br />
 
@@ -93,6 +93,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/Tl5308z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Wireshark type "DNS"(UDP port 53) into the search bar. DNS translates human readable names to computer readable Ip addresses. Next, type "nslookup www.google.com into the command line in VM1, creating activity on Wireshark. Next, type "RDP"(TCP 3389) into the Wireshark search bar. RDP stands for Remote Desktop Protocol, the same function being used to connect to VM1. Observe the activity in Wireshark. Clean your resources on azure. 
 </p>
 <br />

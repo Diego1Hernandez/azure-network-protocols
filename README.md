@@ -60,10 +60,10 @@ Connect to your VM1 using Remote Desktop Connection. On VM1 dowload and install 
 <img src="https://i.imgur.com/EMWQk8U.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Open Wireshark and type "ICMP" into the search bar and press enter. Next, open command line on VM1 through the start menu, then send a perpetual ping command "ping -t <ip address>" to VM2's private IP address. VM2's private IP address can be found on azure Virtual Machines-->VM2-->IPaddress. Traffic should be observable on Wireshark shortly after pinging VM2. Next, on Azure open Network Security Groups-->VM2-NSH-->Inbound Security Rules-->add. Set the designated port ranges to ICMP, then set action to deny. Return to VM1, observe the perpetual ping to VM2 timeout and observe the traffic on wireshark. 
+Open Wireshark and type "ICMP" into the search bar and press enter. Next, open command line on VM1 through the start menu, then send a perpetual ping command "ping -t <ip address>" to VM2's private IP address. VM2's private IP address can be found on azure Virtual Machines -->VM2 -->IP address. Traffic should be observable on Wireshark shortly after pinging VM2. Next, on Azure open Network Security Groups -->VM2-NSH -->Inbound Security Rules-->add. Set the designated port ranges to ICMP, then set action to deny. Return to VM1, observe the perpetual ping to VM2 timeout and observe the traffic on wireshark.
 </p>
 <br />
-
+ 
 <p>
 <h2>Observing SSH Traffic</h2>
 
@@ -71,16 +71,17 @@ Open Wireshark and type "ICMP" into the search bar and press enter. Next, open c
 <img src="https://i.imgur.com/HIiSY6L.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In the command line enter "ssh labuser@ <Vm2 PrivateIP>". Log in as the user you created for VM2 when initally creating VM2. Next, on Wireshark type ssh into the search bar and press enter. Enter linux command like "pwd" "nslookup" in order to produce traffic, observe in Wireshark. Disconnect using command CTRL + D.
 </p>
 <br />
 
+<p>
 <h2>Observing DHCP Traffic</h2>
 
 <p>
 <img src="https://i.imgur.com/AiIuFZG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>>
+<p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />

@@ -90,7 +90,7 @@ In the command line enter "ssh labuser@ "Vm2 PrivateIP". Log in as the user you 
 <img src="https://i.imgur.com/AiIuFZG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In Wireshark type "DHCP" into the search bar and press enter. DHCP is used to automatically assign a computer a new IP address. In the command line of VM1 type " ipconfig /renew" to assign VM1 a new Ip address and produce activity of Wireshark. Observe this activity on Wireshark.
+In Wireshark type "DHCP" into the search bar and press enter. DHCP is used to automatically assign a computer a new IP address. In the command line of VM1 type " ipconfig /renew" to assign VM1 a new IP address and produce activity of Wireshark. Observe this activity on Wireshark.
 </p>
 <br />
 
@@ -101,6 +101,6 @@ In Wireshark type "DHCP" into the search bar and press enter. DHCP is used to au
 <img src="https://i.imgur.com/Tl5308z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In Wireshark type "DNS"(UDP port 53) into the search bar. DNS translates human readable names to computer readable Ip addresses. Next, type "nslookup www.google.com into the command line in VM1, creating activity on Wireshark. Next, type "RDP"(TCP 3389) into the Wireshark search bar. RDP stands for Remote Desktop Protocol, the same function being used to connect to VM1. Observe the activity in Wireshark. Clean your resources on azure. 
+In Wireshark type "DNS"(UDP port 53) into the search bar. DNS translates human readable names to computer readable IP addresses. Next, type "nslookup www.google.com into the command line in VM1, creating activity on Wireshark. Next, type "RDP"(TCP 3389) into the Wireshark search bar. RDP stands for Remote Desktop Protocol, the same function being used to connect to VM1. Observe the activity in Wireshark. Clean your resources on azure. 
 </p>
 <br />

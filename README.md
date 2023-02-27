@@ -32,7 +32,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/QHRSVO5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create a Windows 10 Virtual Machine(VM) named "VM1".  Next, create a Linux (Ubuntu) VM named "VM2", select the previously created Resource Group and Vnet when creating this new VM. Note: if you have never created a virtual machine on Azure, check out my tutorial here: 
+Create a Windows 10 Virtual Machine(VM) named "VM1".  Next, create a Linux (Ubuntu) VM named "VM2", select the Resource Group and Vnet created when you made VM1.
 
 </p>
 <br />
@@ -41,22 +41,34 @@ Create a Windows 10 Virtual Machine(VM) named "VM1".  Next, create a Linux (Ubun
 
 <p>
 <img src="https://i.imgur.com/CLz2qo0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Using Remote Desktop Connection connect to VM1. Log in with the credentials you created with azure. 
+
 <img src="https://i.imgur.com/BTvFxCw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-In the windows search, search remote desktop connection and open. Next, connect to VM1 by typing VM1's address into remote desktop connection. log in using the information you created when creating the virtual machine. On VM1 download and install wireshark from "https://www.wireshark.org/download.html". 
+
+On VM 1 download and install wireshark from "https://www.wireshark.org/download.html".
+</p> 
 </p>
 <br />
 
 <h2>Creating Inbound Security Rules and Observing ICMP Traffic</h2>
 
 <p>
-<img src="https://i.imgur.com/DJ10wms.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/zThSAxL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 <img src="https://i.imgur.com/EMWQk8U.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Open Wireshark and type "ICMP" into the search bar and press enter. Next, open command line on VM1 through the start menu, then send a perpetual ping command "ping -t <ip address>" to VM2's private IP address. VM2's private IP address can be found on azure Virtual Machines -->VM2 -->IP address. Traffic should be observable on Wireshark shortly after pinging VM2. Next, on Azure open Network Security Groups -->VM2-NSH -->Inbound Security Rules-->add. Set the designated port ranges to ICMP, then set action to deny. Return to VM1, observe the perpetual ping to VM2 timeout and observe the traffic on wireshark.
+
+Open Wireshark and type "ICMP" into the search bar and press enter. Next, open command line on VM1 through the start menu, then send a perpetual ping command "ping -t <ip address>" to VM2's private IP address. VM2's private IP address can be found on azure Virtual Machines -> VM2 -> IP address. Traffic should be observable on Wireshark shortly after pinging VM2.
+
+
+<img src="https://i.imgur.com/DJ10wms.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
+<img src="https://i.imgur.com/zThSAxL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+In Azure open Network Security Groups -->VM2-NSH -->Inbound Security Rules-->add. Set the designated port ranges to ICMP, then set action to deny. Return to VM1, observe the perpetual ping to VM2 timeout and observe the traffic on wireshark.
+
 </p>
 <br />
  
